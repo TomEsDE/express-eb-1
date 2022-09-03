@@ -6,13 +6,13 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
-const { NODE_ENV } = process.env;
+const { NODE_ENV, TEST } = process.env;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-  res.send('Hellooooo World!');
+  res.send('Hellooooo World! Test: ' + TEST);
 });
 
 app.listen(port, () => {
