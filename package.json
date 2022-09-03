@@ -1,0 +1,19 @@
+{
+  "name": "express-eb-1",
+  "version": "1.0.0",
+  "description": "deploy-to-eb",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eb"
+  ],
+  "author": "ts",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1"
+  }
+}
