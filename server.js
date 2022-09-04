@@ -6,13 +6,13 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
-const { NODE_ENV } = process.env;
+const { NODE_ENV, TEST, TEST2 } = process.env;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-  res.send('Hellooooo World!');
+  res.send('Hello EB API with notificitation! ENV: ' + NODE_ENV);
 });
 
 app.listen(port, () => {
