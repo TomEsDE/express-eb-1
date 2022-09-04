@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-  res.send('Hellooooo World! TEST2: ' + TEST2);
+  res.send('Hello EB API! ENV: ' + NODE_ENV);
 });
 
 app.listen(port, () => {
